@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/4.0.1/mustache.min.js"></script>
+  <title>Patrick Walls</title>
+  <link rel="stylesheet" type="text/css" href="main.css">
+</head>
+<body>
+
+  <nav>
+    <div class="nav-header">Courses</div>
+    <div id="nav-courses">
+      <script id="course-nav-template" type="x-tmpl-mustache">
+      {{#courses}}<div class="nav-item"><a href="#{{id}}">{{code}}</a></div>{{/courses}}
+      </script>
+    </div>
+
+    <div class="nav-header">Projects</div>
+    <div id="nav-projects">
+      <script id="project-nav-template" type="x-tmpl-mustache">
+      {{#projects}}<div class="nav-item"><a href="#{{id}}">{{title}}</a></div>{{/projects}}
+      </script>
+    </div>
+
+    <div class="nav-header">About</div>
+    <div class="nav-item"><a href="#cv">Curriculum Vitae</a></div>
+<!--
+    <div class="nav-item"><a href="#teaching">Teaching Statement</a></div>
+-->
+    <div class="nav-item"><a href="#contact">Contact</a></div>
+
+    <div class="nav-header"><A href="#">&uarr;&nbsp;</a></div>
+  </nav>
+
+  <header>
+    <div>
+      <h1>Patrick<br>Walls</h1>
+      <h2>Associate Professor<br>of Teaching</h2>
+    </div>
+  </header>
+
+  <section id="courses">
+    <script id="course-template" type="x-tmpl-mustache">
+    {{#courses}}
+    <div class="section-item-wrap";>
+    <div class="section-item" id="{{id}}">
+      <h1>{{code}}</h1>
+      <h2>{{title}}</h2>
+      <h3>Learning Goals</h3>
+      <ul>
+      {{#goals}}
+        <li>{{{.}}}</li>
+      {{/goals}}
+      </ul>
+      <h3>Resources</h3>
+      <ul>
+      {{#resources}}
+        <li>{{{.}}}</li>
+      {{/resources}}
+      </ul>
+    </div>
+    </div>
+    {{/courses}}
+    </script>
+  </section>
+
+  <section id="projects">
+    <script id="project-template" type="x-tmpl-mustache">
+    {{#projects}}
+    <div class="section-item-wrap";>
+    <div class="section-item" id="{{id}}">
+      <h1>{{title}}</h1>
+      <p>{{{description}}}</p>
+      <h3>Resources</h3>
+      <ul>
+      {{#resources}}
+        <li>{{{.}}}</li>
+      {{/resources}}
+      </ul>
+    </div>
+    </div>
+    {{/projects}}
+    </script>
+  </section>
+
+  <section id="about">
+    <div class="section-item" id="cv">
+      <h1>Curriculum Vitae</h1>
+      <h3>Academic</h3>
+      <ul>
+        <li>Associate Professor of Teaching, Department of Mathematics, University of British Columbia, 2020&ndash;Present</li>
+        <li>Instructor, Department of Mathematics, University of British Columbia, 2015&ndash;2020</li>
+        <li>Postdoctoral Fellow, Department of Mathematics, McMaster University, 2013&ndash;2015</li>
+      </ul>
+      <h3>Education</h3>
+      <ul>
+        <li>PhD, Mathematics, University of Toronto, 2013</li>
+        <li>MSc, Mathematics, University of British Columbia, 2007</li>
+        <li>BSc, Mathematics, University of Calgary, 2006</li>
+        <li>BSc, Mechanical Engineering, University of Calgary, 2006</li>
+      </ul>
+      <h3>Awards</h3>
+      <ul>
+        <li>2019 Faculty of Science Excellence in Service Award</li>
+      </ul>
+
+      <p>See <a href='docs/cv_2021_12_01.pdf'>CV</a> (updated December 2021)</p>
+    </div>
+
+<!--
+    <div class="section-item" id="teaching">
+      <h1>Teaching Statement</h1>
+      <p><em>Under construction</em></p>
+    </div>
+-->
+
+    <div class="section-item" id="contact">
+      <h1>Contact</h1>
+      <p>
+        Department of Mathematics<br>
+        The University of British Columbia<br>
+        Room 229E, 1984 Mathematics Road<br>
+        Vancouver, BC<br>
+        Canada V6T 1Z2
+      </p>
+      <p style="line-height: 14px;">
+      <a href="mailto:pwalls@math.ubc.ca" style="text-decoration: none; color: black"><img src="img/email.png" style="width: 28px; margin: 0px 8px -8px 0px;">pwalls@math.ubc.ca</a>
+      <br><br>
+      <a href="https://github.com/patrickwalls" style="text-decoration: none; color: black"><img src="img/github.png" style="width: 25px; margin: 0px 12px -8px 2px;">patrickwalls<a/>
+      <br><br>
+      <a href="https://twitter.com/PatrickJWalls" style="text-decoration: none; color: black"><img src="img/twitter.png" style="width: 35px; margin: 0px 2px -6px -3px;">@PatrickJWalls</a>
+      <br><br>
+      <a href="https://www.linkedin.com/in/patrickjwalls/" style="text-decoration: none; color: black"><img src="img/linkedin.png" style="width: 25px; margin: 0px 9px -6px 3px;">patrickjwalls</a>
+      <br><br>
+      <img src="img/telephone.png" style="width: 20px; margin: 2px 12px -6px 4px;">(604) 822-3045</a>
+    </p>
+    </div>
+  </section>
+
+  <footer>
+  </footer>
+
+  <script type="text/javascript" src="main.js"></script>
+
+</body>
+</html>

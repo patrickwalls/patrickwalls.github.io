@@ -1,0 +1,157 @@
+body, h1, h2, h3, h4, h5, h6 {
+  margin: 0px;
+  padding: 0px;
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: black;
+}
+
+:root {
+  --fontsize1: 80px;
+  --lineheight1: 70px;
+  --fontsize1m: 48px;
+  --lineheight1m: 40px;
+  --fontsize2: 32px;
+  --lineheight2: 30px;
+  --fontsize3: 16px;
+  --lineheight3: 1.5em;
+}
+
+/* ########## NAVIGATION BAR ########## */
+
+nav {
+  position: fixed;
+  width: 225px;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1;
+}
+
+nav .nav-header {
+  font-size: var(--fontsize3);
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: right;
+  margin-top: 30px
+}
+nav .nav-item {
+  font-size: var(--fontsize3);
+  text-align: right;
+  margin: 7px 0px;
+}
+
+nav a {
+  text-decoration: none;
+}
+
+/* ########## HEADER ########## */
+
+header {
+  height: 100vh;
+  background-image: url("img/phase.png");
+  background-position: center;
+  background-size: cover;
+}
+
+header div {
+  position: absolute;
+  width: 60%;
+  top: 50%;
+  left: 20%;
+  transform: translateY(-50%);
+}
+
+header h1 {
+  font-size: var(--fontsize1);
+  line-height: var(--lineheight1);
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: right;
+  margin-right: -2px;
+}
+
+header h2 {
+  font-size: var(--fontsize2);
+  line-height: 36px;
+  font-weight: normal;
+  text-align: right;
+}
+
+/* ########## SECTIONS ########## */
+
+.section-item {
+  min-height: 100vh;
+  max-width: 1200px;
+  margin-left: 300px;
+  margin-right: 250px;
+}
+
+.section-item h1 {
+  font-size: var(--fontsize1);
+  line-height: var(--lineheight1);
+  margin-left: -5px;
+  padding-top: 100px;
+  font-weight: bold;
+}
+
+.section-item h2 {
+  font-size: var(--fontsize2);
+  line-height: var(--lineheight2);
+  margin-left: -2px;
+  font-weight: normal;
+}
+
+.section-item h3 {
+  margin-top: 30px;
+  font-size: var(--fontsize3);
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.section-item ul {
+  margin-top: 5px;
+  padding-left: 19px;
+  line-height: var(--lineheight3);
+  font-size: var(--fontsize3);
+}
+
+.section-item p {
+  margin-top: 30px;
+  line-height: var(--lineheight3);
+  font-size: var(--fontsize3);
+}
+
+.section-item-wrap {
+   background-repeat: no-repeat;
+   background-position: bottom;
+   background-size: cover;
+}
+
+@media only screen and (max-width: 805px) {
+  nav {
+    display: none;
+  }
+
+  header h1 {
+    font-size: var(--fontsize1m);
+    line-height: var(--lineheight1m);
+  }
+
+  .section-item {
+    min-height: 0px;
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+
+  .section-item h1 {
+    font-size: var(--fontsize1m);
+    line-height: var(--lineheight1m);
+    padding-top: 30px;
+  }
+
+  footer {
+    height: 30px;
+  }
+}
