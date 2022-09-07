@@ -16,8 +16,8 @@ var courses = {
         "Approximate solutions of ordinary differential equations"
       ],
       "resources": [
-        "<a href='docs/math210_outline_2020W1.pdf'>Course Outline 2020W1</a>",
-        "<a href='https://www.math.ubc.ca/~pwalls/math-python'>Mathematical Python</a>",
+        "<a href='docs/math210_outline_2021W2.pdf'>Course Outline 2021W2</a>",
+        "<a href='https://patrickwalls.github.io/mathematicalpython'>Mathematical Python</a>",
         "Jupyter notebooks on <a href='https://ubc.syzygy.ca'>Syzygy</a>",
         "Lecture notes on <a href='https://github.com/ubc-math210'>GitHub</a>",
         "Lecture time and location: <a href='https://courses.students.ubc.ca/cs/courseschedule?pname=subjarea&tname=subj-course&dept=MATH&course=210'>UBC Course Schedule</a>"
@@ -35,7 +35,7 @@ var courses = {
         "Approximate and visualize solutions of differential equations with <a href='https://www.mathworks.com/products/matlab.html'>MATLAB</a>"
       ],
       "resources": [
-        "<a href='docs/math258_outline_2019W1.pdf'>Course Outline 2019W1</a>",
+        "<a href='docs/math258_outline.pdf'>Course Outline</a>",
         "<a href='https://www.jirka.org/diffyqs/'>Notes on DiffyQs</a> by Jiri Lebl",
         "<a href='https://matlab.mathworks.com'>MATLAB Online</a>",
         "More information about <a href='https://mech.ubc.ca/undergraduate/mech-2/'>MECH 2</a>"
@@ -55,7 +55,7 @@ var courses = {
         "Approximate definite integrals and visualize curves and surfaces in 3D with <a href='https://www.mathworks.com/products/matlab.html'>MATLAB</a>"
       ],
       "resources": [
-        "<a href='docs/math254_outline_2019W2.pdf'>Course Outline 2019W2</a>",
+        "<a href='docs/math254_outline.pdf'>Course Outline</a>",
         "<a href='http://www.apexcalculus.com'>APEX Calculus</a> by Gregory Hartman",
         "<a href='https://matlab.mathworks.com'>MATLAB Online</a>",
         "More information about <a href='https://mech.ubc.ca/undergraduate/mech-2/'>MECH 2</a>"
@@ -76,9 +76,26 @@ var courses = {
       ],
       "resources": [
         "<a href='https://ubcmath.github.io/MATH307/'>MATH 307 Course Notes</a>",
-        "<a href='docs/math307_outline_2021W1.pdf'>Course Outline 2021W1</a>",
-        "<a href='https://lyryx.com/linear-algebra-applications/'>Linear Algebra with Applications</a> by Keith Nicholson",
+        "<a href='docs/math307_outline_2022W1.pdf'>Course Outline 2022W1</a>",
         "Lecture time and location: <a href='https://courses.students.ubc.ca/cs/courseschedule?pname=subjarea&tname=subj-course&dept=MATH&course=307'>UBC Course Schedule</a>"
+      ]
+    },
+    {
+      "id": "math441",
+      "code": "MATH 441",
+      "title": "Discrete Optimization Problems",
+      "goals": [
+        "Formulate well-defined optimization problems based on real-world phenomena",
+        "Describe and contrast algorithms for solving optimization problems",
+        "Describe and contrast the computational complexity of optimization problems",
+        "Use mathematical software to compute solutions of optimization problems",
+        "Communicate solutions of optimization problems to a general mathematical audience"
+      ],
+      "resources": [
+        "<a href='docs/math441_outline_2022W1.pdf'>Course Outline 2022W1</a>",
+        "<a href='docs/math441_project_2022W1.pdf'>Project Outline 2022W1</a>",
+        "<a href='docs/math441_portfolio_2022W1.pdf'>Learning Portfolio Outline 2022W1</a>",
+        "Lecture time and location: <a href='https://courses.students.ubc.ca/cs/courseschedule?pname=subjarea&tname=subj-course&dept=MATH&course=441'>UBC Course Schedule</a>"
       ]
     }
   ]
@@ -100,10 +117,10 @@ var projects = {
       "id": "mathpython",
       "title": "Mathematical Python",
       "description": `
-        <a href='https://www.math.ubc.ca/~pwalls/math-python'>Mathematical Python</a> is a web-based open textbook on mathematical computing with Python, SciPy and Jupyter. The book consists of 25+ Jupyter notebooks covering markdown and LaTeX, basic Python programming, NumPy, SciPy and matplotlib, optimization, numerical integration, linear systems equations, eigenvalues and eigenvectors, and ordinary differential equations.`,
+        <a href='https://patrickwalls.github.io/mathematicalpython'>Mathematical Python</a> is a web-based open textbook on mathematical computing with Python, SciPy and Jupyter. The book consists of 25+ Jupyter notebooks covering markdown and LaTeX, basic Python programming, NumPy, SciPy and matplotlib, optimization, numerical integration, linear systems equations, eigenvalues and eigenvectors, and ordinary differential equations.`,
       "resources": [
-        "<a href='https://www.math.ubc.ca/~pwalls/math-python'>Mathematical Python</a>",
-        "Jupyter notebooks on <a href='https://github.com/patrickwalls/mathematical-python'>GitHub</a>"
+        "<a href='https://patrickwalls.github.io/mathematicalpython'>Mathematical Python</a>",
+        "Jupyter notebooks on <a href='https://github.com/patrickwalls/mathematicalpython'>GitHub</a>"
       ]
     },
     {
