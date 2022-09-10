@@ -134,6 +134,18 @@ var projects = {
       ]
     },
     {
+      "id": "coursemap",
+      "title": "Course Map",
+      "description": `
+        A data visualization of the undergraduate mathematics program at UBC built with <a href='https://d3js.org'>D3</a>.
+        `,
+      "resources": [
+        "<a href='https://ubcmath.github.io/coursemap'>Course Map</a>"
+      ]
+    },
+
+
+    {
       "id": "jupyterdays",
       "title": "JupyterDays",
       "description": `
