@@ -16,7 +16,7 @@ var courses = {
         "Approximate solutions of ordinary differential equations"
       ],
       "resources": [
-        "<a href='docs/math210_outline_2021W2.pdf'>Course Outline 2021W2</a>",
+        "<a href='docs/math210_outline_2023W2.pdf'>Course Outline 2023W2</a>",
         "<a href='https://patrickwalls.github.io/mathematicalpython'>Mathematical Python</a>",
         "Jupyter notebooks on <a href='https://ubc.syzygy.ca'>Syzygy</a>",
         "Lecture notes on <a href='https://github.com/ubc-math210'>GitHub</a>",
@@ -92,10 +92,9 @@ var courses = {
         "Communicate solutions of optimization problems to a general mathematical audience"
       ],
       "resources": [
-        "<a href='docs/math441_outline_2022W1.pdf'>Course Outline 2022W1</a>",
-        "<a href='docs/math441_project_2022W1.pdf'>Project Outline 2022W1</a>",
-        "<a href='docs/math441_portfolio_2022W1.pdf'>Learning Portfolio Outline 2022W1</a>",
-        "Lecture time and location: <a href='https://courses.students.ubc.ca/cs/courseschedule?pname=subjarea&tname=subj-course&dept=MATH&course=441'>UBC Course Schedule</a>"
+        "<a href='docs/math441_outline_2023W2.pdf'>Course Outline 2023W2</a>",
+        "<a href='docs/math441_project_2023W2.pdf'>Project Outline 2023W2</a>",
+        "<a href='docs/math441_portfolio_2023W2.pdf'>Learning Portfolio Outline 2023W2</a>"
       ]
     }
   ]
