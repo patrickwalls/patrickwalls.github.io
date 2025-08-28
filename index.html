@@ -1,146 +1,151 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/4.0.1/mustache.min.js"></script>
-  <title>Patrick Walls</title>
-  <link rel="stylesheet" type="text/css" href="main.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Patrick Walls</title>
+<link rel="stylesheet" type="text/css" href="main.css">
 </head>
 <body>
 
-  <nav>
-    <div class="nav-header">Courses</div>
-    <div id="nav-courses">
-      <script id="course-nav-template" type="x-tmpl-mustache">
-      {{#courses}}<div class="nav-item"><a href="#{{id}}">{{code}}</a></div>{{/courses}}
-      </script>
-    </div>
+<nav>
+<div class="nav-header">Courses</div>
+<div class="nav-item"><a href="#math100">MATH 100</a></div>
+<div class="nav-item"><a href="#math210">MATH 210</a></div>
+<div class="nav-item"><a href="#math307">MATH 307</a></div>
+<div class="nav-item"><a href="#math441">MATH 441</a></div>
 
-    <div class="nav-header">Projects</div>
-    <div id="nav-projects">
-      <script id="project-nav-template" type="x-tmpl-mustache">
-      {{#projects}}<div class="nav-item"><a href="#{{id}}">{{title}}</a></div>{{/projects}}
-      </script>
-    </div>
+<div class="nav-header">Projects</div>
+<div class="nav-item"><a href="#mathpython">Mathematical Python</a></div>
+<div class="nav-item"><a href="#coursemap">Course Map</a></div>
+<div class="nav-item"><a href="#ctlmath">CTLMath</a></div>
+<div class="nav-item"><a href="#mbgrader">mbgrader</a></div>
 
-    <div class="nav-header">About</div>
-    <div class="nav-item"><a href="#cv">Curriculum Vitae</a></div>
-<!--
-    <div class="nav-item"><a href="#teaching">Teaching Statement</a></div>
--->
-    <div class="nav-item"><a href="#contact">Contact</a></div>
+<div class="nav-header">About</div>
+<div class="nav-item"><a href="#cv">Curriculum Vitae</a></div>
+<div class="nav-item"><a href="#contact">Contact</a></div>
 
-    <div class="nav-header"><A href="#">&uarr;&nbsp;</a></div>
-  </nav>
+<div class="nav-header"><A href="#">&uarr;&nbsp;</a></div>
+</nav>
 
-  <header>
-    <div>
-      <h1>Patrick<br>Walls</h1>
-      <h2>Associate Professor<br>of Teaching</h2>
-    </div>
-  </header>
+<header>
+<div>
+<h1>Patrick<br>Walls</h1>
+<h2>Associate Professor<br>of Teaching</h2>
+</div>
+</header>
 
-  <section id="courses">
-    <script id="course-template" type="x-tmpl-mustache">
-    {{#courses}}
-    <div class="section-item-wrap";>
-    <div class="section-item" id="{{id}}">
-      <h1>{{code}}</h1>
-      <h2>{{title}}</h2>
-      <h3>Learning Goals</h3>
-      <ul>
-      {{#goals}}
-        <li>{{{.}}}</li>
-      {{/goals}}
-      </ul>
-      <h3>Resources</h3>
-      <ul>
-      {{#resources}}
-        <li>{{{.}}}</li>
-      {{/resources}}
-      </ul>
-    </div>
-    </div>
-    {{/courses}}
-    </script>
-  </section>
+<section id="courses">
 
-  <section id="projects">
-    <script id="project-template" type="x-tmpl-mustache">
-    {{#projects}}
-    <div class="section-item-wrap";>
-    <div class="section-item" id="{{id}}">
-      <h1>{{title}}</h1>
-      <p>{{{description}}}</p>
-      <h3>Resources</h3>
-      <ul>
-      {{#resources}}
-        <li>{{{.}}}</li>
-      {{/resources}}
-      </ul>
-    </div>
-    </div>
-    {{/projects}}
-    </script>
-  </section>
+<div class="section-item" id="math100">
+<h1>MATH 100</h1>
+<h2>Differential Calculus with Applications</h2>
+<p>Introduction to differential calculus for science and engineering. Course design includes weekly 2-hour large lectures and 1-hour small classes for active learning with group worksheets. Course work includes group projects, online homework and exams. See <a href="https://secure.math.ubc.ca/php/MathNet/courseinfo.php?t=outline&session=2024W&name=100:1A1" target="_blank">Course Outline 2024W1</a> for more info. Check out the <a href="https://personal.math.ubc.ca/~CLP/CLP1/">CLP Textbook</a> for notes, exercises and examples.</p>
+<img src="img/math100.png" style="width: 100%;" />
+</div>
 
-  <section id="about">
-    <div class="section-item" id="cv">
-      <h1>Curriculum Vitae</h1>
-      <h3>Academic</h3>
-      <ul>
-        <li>Associate Professor of Teaching, Department of Mathematics, University of British Columbia, 2020&ndash;Present</li>
-        <li>Instructor, Department of Mathematics, University of British Columbia, 2015&ndash;2020</li>
-        <li>Postdoctoral Fellow, Department of Mathematics, McMaster University, 2013&ndash;2015</li>
-      </ul>
-      <h3>Education</h3>
-      <ul>
-        <li>PhD, Mathematics, University of Toronto, 2013</li>
-        <li>MSc, Mathematics, University of British Columbia, 2007</li>
-        <li>BSc, Mathematics, University of Calgary, 2006</li>
-        <li>BSc, Mechanical Engineering, University of Calgary, 2006</li>
-      </ul>
-      <h3>Awards</h3>
-      <ul>
-        <li>2019 Faculty of Science Excellence in Service Award</li>
-      </ul>
+<div class="section-item" id="math210">
+<h1>MATH 210</h1>
+<h2>Introduction to Mathematical Computing</h2>
+<p>Introduction to mathematical software and numerical methods. Basic computer programming including numbers, arrays, functions, vectorization and iteration. Sequences and series, root finding, numerical integration, numerical methods for differential equations, systems of linear equations, eigenvalues and mathematical graphics. See <a href="docs/math210_outline_2024W2.pdf">Course Outline 2024W2</a> for more info.</p>
+<p>Web-based open source computational resources are at the core of the course design. Students login <a href="https://ubc.syzygy.ca">Syzygy</a> whenever and wherever they choose and write <a href="https//python.org">Python</a> code in <a href="https://jupyter.org">Jupyter</a> notebooks using their own devices. Lectures are live-coding events in which students applied programming to standard numerical methods in mathematics. Check out <a href="https://patrickwalls.github.io/mathematicalpython">Mathematical Python</a> for examples and exercises.</p>
+<img src="img/math210.png" style="width: 100%;" />
+</div>
 
-      <p>See <a href='docs/cv_2024_04_21.pdf'>CV</a> (updated April 2024)</p>
-    </div>
+<div class="section-item" id="math307">
+<h1>MATH 307</h1>
+<h2>Applied Linear Algebra</h2>
+<p>Linear systems of equations, LU decomposition, condition number, orthogonal projection, QR decomposition, least squares approximation, orthogonal diagonalization, singular value decomposition, discrete Fourier transform. Applications: interpolation, data fitting, principal component analysis, digital signal processing. Matrix computations with mathematical software Python, SciPy and Jupyter. See <a href="docs/math307_outline_2025W1.pdf">Course Outline 2025W1</a> for more info. Check out <a href="https://ubcmath.github.io/MATH307/">MATH 307 Course Notes</a> for notes and examples.</p>
+<img src="img/math307.png" style="width: 100%;" />
+</div>
 
-<!--
-    <div class="section-item" id="teaching">
-      <h1>Teaching Statement</h1>
-      <p><em>Under construction</em></p>
-    </div>
--->
+<div class="section-item" id="math441">
+<h1>MATH 441</h1>
+<h2>Discrete Optimization Problems</h2>
+<p>Project-based course which emphasizes mathematical research, communication, collaboration, computation and reflection. Students collaborate on group projects which explore real-world applications of linear programming, combinatorial optimization and convex optimization. See <a href="docs/math441_outline_2024W2.pdf">Course Outline 2024W2</a> for more info.</p>
+<img src="img/math441.png" style="width: 100%;" />
+</div>
 
-    <div class="section-item" id="contact">
-      <h1>Contact</h1>
-      <p>
-        Department of Mathematics<br>
-        The University of British Columbia<br>
-        Room 229E, 1984 Mathematics Road<br>
-        Vancouver, BC<br>
-        Canada V6T 1Z2
-      </p>
-      <p style="line-height: 14px;">
-      <a href="mailto:pwalls@math.ubc.ca" style="text-decoration: none; color: black"><img src="img/email.png" style="width: 28px; margin: 0px 8px -8px 0px;">pwalls@math.ubc.ca</a>
-      <br><br>
-      <a href="https://github.com/patrickwalls" style="text-decoration: none; color: black"><img src="img/github.png" style="width: 25px; margin: 0px 12px -8px 2px;">patrickwalls<a/>
-      <br><br>
-      <a href="https://www.linkedin.com/in/patrickjwalls/" style="text-decoration: none; color: black"><img src="img/linkedin.png" style="width: 25px; margin: 0px 9px -6px 3px;">patrickjwalls</a>
-      <br><br>
-      <img src="img/telephone.png" style="width: 20px; margin: 2px 12px -6px 4px;">(604) 822-3045</a>
-    </p>
-    </div>
-  </section>
+</section>
 
-  <footer>
-  </footer>
+<section id="projects">
 
-  <script type="text/javascript" src="main.js"></script>
+<div class="section-item" id="mathpython">
+<h1>Mathematical Python</h1>
+<br>
+<p><a href='https://patrickwalls.github.io/mathematicalpython'>Mathematical Python</a> is a web-based open textbook on mathematical computing with Python, SciPy and Jupyter. The book consists of 25+ Jupyter notebooks covering markdown and LaTeX, basic Python programming, NumPy, SciPy and Matplotlib, optimization, numerical integration, linear systems equations, eigenvalues and eigenvectors, and ordinary differential equations.</p>
+<img src="img/mathpy.png" style="width: 100%;" />
+</div>
+
+<div class="section-item" id="coursemap">
+<h1>Course Map</h1>
+<br>
+<p>Interactive data visualization of the undergraduate mathematics program at UBC built with <a href='https://d3js.org'>D3</a>. Students navigate course prerequisites and program requirements. Check out <a href='https://ubcmath.github.io/coursemap'>ubcmath.github.io/coursemap</a> to explore the map.</p>
+<img src="img/coursemap.png" style="width: 100%;" />
+</div>
+
+<div class="section-item" id="ctlmath">
+<h1>CTLMath</h1>
+<br>
+<p>Computational Teaching and Learning in Mathematics (CTLMath) is an organizational framework for teaching and learning with open source mathematical software and web-based ocmputational resources. See <a href='https://ubcmath.github.io/python'>Python for UBC Math</a> and <a href='https://ubcmath.github.io/matlab'>MATLAB for UBC Math</a> for examples of computation in math courses at UBC. Check out <a href="https://ctlmath.github.io/birs2025">BIRS Workshop</a> for more examples and resources.</p>
+<img src="img/ctlmath.png" style="width: 100%;" />
+</div>
+
+<div class="section-item" id="mbgrader">
+<h1>mbgrader</h1>
+<br>
+<p>mbgrader (<strong>m</strong>ath <strong>b</strong>atch <strong>grader</strong>) is a custom web application for batch grading MATLAB assignments. The application is built with Python and Flask, SQLite and BackboneJS. The application reads m-files, searches for values attached to particuarl variable names and groups similar values together into batches. Grader does not need to have solutions instead mbgrader allows graders to provide thoughtful, individualized feedback to students since all responses are reduced to a small number of batches per question. Check it out on <a href="https://github.com/patrickwalls/mbgrader">GitHub</a>.</p>
+<img src="img/mbgrader.png" style="width: 100%;" />
+</div>
+
+</section>
+
+<section id="about">
+<div class="section-item" id="cv">
+<h1>Curriculum Vitae</h1>
+<h3>Academic</h3>
+<ul>
+<li>Associate Professor of Teaching, University of British Columbia, 2020&ndash;Present</li>
+<li>Instructor, Department of Mathematics, 2015&ndash;2020</li>
+<li>Postdoctoral Fellow, McMaster University, 2013&ndash;2015</li>
+</ul>
+<h3>Education</h3>
+<ul>
+<li>PhD, Mathematics, University of Toronto, 2013</li>
+<li>MSc, Mathematics, University of British Columbia, 2007</li>
+<li>BSc, Mathematics, University of Calgary, 2006</li>
+<li>BSc, Mechanical Engineering, University of Calgary, 2006</li>
+</ul>
+<h3>Awards</h3>
+<ul>
+<li>2019 Faculty of Science Excellence in Service Award</li>
+</ul>
+
+<p>See <a href='docs/cv_2025_08_21.pdf'>CV</a> (updated August 2025)</p>
+</div>
+
+<div class="section-item" id="contact">
+<h1>Contact</h1>
+<br>
+<p>
+Department of Mathematics<br>
+The University of British Columbia<br>
+Room 229E, 1984 Mathematics Road<br>
+Vancouver, BC<br>
+Canada V6T 1Z2
+</p>
+<p>
+<a href="mailto:pwalls@math.ubc.ca" style="text-decoration: none; color: black">pwalls@math.ubc.ca</a>
+<br>
+<a href="https://github.com/patrickwalls" style="text-decoration: none; color: black">github.com/patrickwalls<a/>
+<br>
+604-822-3045
+</p>
+</div>
+</section>
+
+<footer>
+</footer>
 
 </body>
 </html>

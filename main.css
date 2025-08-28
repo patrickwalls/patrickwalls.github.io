@@ -1,4 +1,4 @@
-body, h1, h2, h3, h4, h5, h6 {
+body, h1, h2, h3, h4, h5, h6, p {
   margin: 0px;
   padding: 0px;
   font-family: Helvetica, Arial, sans-serif;
@@ -9,12 +9,12 @@ a {
 }
 
 :root {
-  --fontsize1: 80px;
-  --lineheight1: 70px;
+  --fontsize1: 64px;
+  --lineheight1: 60px;
   --fontsize1m: 48px;
   --lineheight1m: 40px;
-  --fontsize2: 32px;
-  --lineheight2: 30px;
+  --fontsize2: 28px;
+  --lineheight2: 28px;
   --fontsize3: 16px;
   --lineheight3: 1.5em;
 }
@@ -36,6 +36,7 @@ nav .nav-header {
   text-align: right;
   margin-top: 30px
 }
+
 nav .nav-item {
   font-size: var(--fontsize3);
   text-align: right;
@@ -74,18 +75,16 @@ header h1 {
 
 header h2 {
   font-size: var(--fontsize2);
-  line-height: 36px;
+  line-height: var(--lineheight2);
   font-weight: normal;
   text-align: right;
 }
 
 /* ########## SECTIONS ########## */
 
-.section-item {
-  min-height: 100vh;
-  max-width: 1200px;
-  margin-left: 300px;
-  margin-right: 250px;
+section {
+  max-width: 750px;
+  margin: auto;
 }
 
 .section-item h1 {
@@ -100,6 +99,7 @@ header h2 {
   font-size: var(--fontsize2);
   line-height: var(--lineheight2);
   margin-left: -2px;
+  margin-bottom: 20px;
   font-weight: normal;
 }
 
@@ -118,18 +118,42 @@ header h2 {
 }
 
 .section-item p {
-  margin-top: 30px;
   line-height: var(--lineheight3);
   font-size: var(--fontsize3);
+  padding-bottom: 1em;
 }
 
-.section-item-wrap {
-   background-repeat: no-repeat;
-   background-position: bottom;
-   background-size: cover;
+/* ########## GRID ########## */
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
 }
 
-@media only screen and (max-width: 805px) {
+.grid-item {
+}
+
+footer {
+  margin-top: 100px;
+  height: 100px;
+  background-color: rgba(0,0,0,0.1);
+}
+
+
+@media only screen and (max-width: 1500px) {
+  .section-item {
+    max-width: 800px;
+  }
+
+}
+
+@media only screen and (max-width: 1300px) {
+  nav {
+    display: none;
+  }
+}
+@media only screen and (max-width: 1000px) {
   nav {
     display: none;
   }
@@ -151,7 +175,7 @@ header h2 {
     padding-top: 30px;
   }
 
-  footer {
-    height: 30px;
+  .grid-container {
+    grid-template-columns: 1fr;
   }
 }
